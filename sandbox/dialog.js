@@ -72,7 +72,7 @@ function dialog(context) {
       })
 
     divHeader.append('h1')
-      .text('Odyssey sandbox');
+      .text('Editor');
 
     var templates = context.templates().map(function(d) { return d.title; }),
         basemaps = context.basemaps();
