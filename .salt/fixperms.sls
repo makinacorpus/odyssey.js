@@ -46,3 +46,4 @@
     - watch:
       - file: {{cfg.name}}-restricted-perms
 
+
