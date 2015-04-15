@@ -199,11 +199,11 @@
       _resetActions: function(actions) {
         // update footer title and author
         var title_ = actions.global.title === undefined ? '' : actions.global.title,
-            author_ = actions.global.author === undefined ? 'Using' : 'By '+actions.global.author+' using';
+            author_ = actions.global.author === undefined ? 'Using' : 'By '+actions.global.author+' ';
 
         document.getElementById('title').innerHTML = title_;
         document.getElementById('author').innerHTML = author_;
-        document.title = title_ + " | " + author_ +' Odyssey.js';
+        document.title = title_ + " | " + author_ +' Makina Corpus';
 
         document.getElementById('slides_container').style.display = "block";
 
