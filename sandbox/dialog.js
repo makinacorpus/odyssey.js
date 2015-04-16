@@ -84,7 +84,7 @@ function dialog(context) {
       .append('a')
       .attr('class', 'helpButton')
       .attr('title','Documentation')
-      .attr('href', '/odyssey.js/documentation');
+      .attr('href', '#');
 
     var selector = help.append('li')
       .append('a')
@@ -172,7 +172,7 @@ function dialog(context) {
         if (!isSafari() && notOld()) {
           var md = el.select('textarea').node().codemirror.getValue();
           exp.zip(md, context.template(), function(zip) {
-            saveAs(zip.generate({ type: 'blob' }), 'odyssey.zip');
+            saveAs(zip.generate({ type: 'blob' }), 'story.zip');
           });
         } else {
           alert('Download is not fully supported in this browser.');
@@ -219,7 +219,7 @@ function dialog(context) {
       .attr('id', 'show_slide')
       .text(templates[0])
       .attr('title','Change template')
-      .attr('href', '/odyssey.js/sandbox/sandbox.html')
+      .attr('href', '/sandbox/sandbox.html')
       .on('click', function(d) {
         d3.event.preventDefault();
         d3.select(document.body).call(Splash(context).on('template', function(t) {
